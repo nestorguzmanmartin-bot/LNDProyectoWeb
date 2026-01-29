@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Boceto sobre los gigantes de la música cumpliendo requisitos escolares.">
+    <title>Los Gigantes de la Música</title>
+    <style>
+        body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* 60% Dominante */
+    color: #ececec; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+h1 {
+    text-align: center;
+    color: #1DB954; /* 20% Acento (Spotify) */
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    text-shadow: 0px 0px 10px rgba(29, 185, 84, 0.3);
+}
+
+header {
+    background-color: #111; 
+    border-bottom: 2px solid #00A8E1; /* 10% Detalle (Amazon) */
+}
+
+header video {
+    width: 100%;
+    height: auto;
+    max-height: 250px; 
+    object-fit: cover; 
+    filter: grayscale(30%) brightness(0.7);
+}
+
+/* Estilo para la pregunta resaltada (Punto de interés) */
+.pregunta-resaltada {
+    color: #FF5500; /* 10% Interés (SoundCloud) */
+    font-size: 1.2em;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center; 
+}
+
+nav li a {
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none; 
+    transition: all 0.3s; 
+}
+
+nav li a:hover {
+    color: #00A8E1; /* Cambio de color suave */
+    background-color: rgba(0, 168, 225, 0.1); 
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #111;
+    border-top: 1px solid #333;
+    padding: 20px 0;
+    margin-top: auto; 
+    text-align: center;
+}
+
+.contenido-footer p {
+    color: #888;
+    font-size: 0.9em;
+}
+    </style>
+</head>
+<body>
+
+    <header id="inicio">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#historia">Historia de la música</a></li>
+                <li><a href="#top-artistas">Top Artistas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="historia">
+            <article>
+                <h1>Los Gigantes de la música</h1>
+                
+                <p>La música es el arte de organizar sensible y lógicamente una combinación coherente de sonidos y silencios. Es una de las formas de expresión artística más <strong>antiguas y universales</strong> de la humanidad. A través de la historia, ha servido para <em>conectar emociones</em> y contar historias. <span style="color: blue;">(Definición básica)</span>.</p>
+
+                <figure style="border: 1px solid #ccc; padding: 5px;">
+                    <img src="https://via.placeholder.com/500x200?text=Instrumentos+Musicales" alt="Fotografía de diversos instrumentos musicales clásicos y modernos">
+                    <figcaption>Fig. 1: La diversidad de instrumentos a través de la historia.</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <section id="top-artistas">
+            <h2>Top 5 artistas más escuchados mundial</h2>
+            <p>Un vistazo a los gigantes actuales de la industria.</p>
+
+            <ol>
+                <li>
+                    <h3>El Rey/Reina del Pop Actual</h3>
+                    <img src="https://via.placeholder.com/100x100?text=Artista+1" alt="Foto del artista número 1">
+                    <p>Descripción breve del artista y sus logros recientes.</p>
+                </li>
+                <li>
+                    <h3>La Banda Global</h3>
+                    <img src="https://via.placeholder.com/100x100?text=Artista+2" alt="Foto de la banda número 2">
+                    <p>Descripción de la banda que rompe récords mundiales.</p>
+                </li>
+                </ol>
+
+            <h3>Tabla de Datos Musicales (Ejemplo para cumplir requisito)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Género</th>
+                        <th>Artista Ejemplo</th>
+                        <th>Oyentes Mensuales (aprox.)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2" style="vertical-align: middle;">Pop / Urbano</td>
+                        <td>Artista A</td>
+                        <td>80 Millones</td>
+                    </tr>
+                    <tr>
+                        <td>Artista B</td>
+                        <td>75 Millones</td>
+                    </tr>
+                    <tr>
+                        <td>Rock Clásico</td>
+                        <td>Banda Legendaria</td>
+                        <td>50 Millones</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Total de oyentes combinados en esta tabla:</td>
+                        <td>205+ Millones</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+
+    <aside>
+        <h3>Recursos Adicionales</h3>
+        <p>Enlaces de interés sobre el mundo de la música.</p>
+        <ul>
+            <li><a href="https://www.spotify.com" target="_blank">Spotify (Plataforma de streaming)</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Música" target="_blank">Wikipedia: La Música</a></li>
+        </ul>
+        
+        <p>
+            <a href="#" class="boton-enlace">Descargar Playlist Top 5</a>
+        </p>
+    </aside>
+
+    <footer id="contacto">
+        <h3>Contacto y Suscripción</h3>
+        <p>Suscríbete para recibir novedades musicales.</p>
+
+        <form action="#" method="POST">
+            <div style="margin-bottom: 10px;">
+                <label for="nombre">Nombre (Texto):</label><br>
+                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+            </div>
+            
+            <div style="margin-bottom: 10px;">
+                <label for="email">Correo (Email):</label><br>
+                <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
+            </div>
+            
+            <div style="margin-bottom: 10px;">
+                <label for="genero-fav">Género Favorito (Selector):</label><br>
+                <select id="genero-fav" name="genero">
+                    <option value="">Selecciona...</option>
+                    <option value="pop">Pop</option>
+                    <option value="rock">Rock</option>
+                    <option value="urbano">Urbano/Reggaeton</option>
+                    <option value="clasica">Clásica</option>
+                </select>
+            </div>
+            
+            <button type="submit">Suscribirse</button>
+        </form>
+        <p style="font-size: 0.8em; margin-top: 20px;">&copy; 2023 Los Gigantes de la Música. Boceto escolar.</p>
+    </footer>
+
+</body>
+</html>
