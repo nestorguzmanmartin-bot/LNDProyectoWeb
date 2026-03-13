@@ -1,0 +1,377 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #000000; 
+    color: #333; 
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    p{color: rgb(236, 236, 236);} 
+}
+
+h1 {
+    text-align: center;
+    color: #1DB954;
+    margin: 15px 0;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+    text-align: center; 
+}
+
+header {
+    background-color: #000000; 
+    box-shadow: 1px 2px 3px #00A8E1;  
+    nav ul {
+        list-style-type: none; 
+        margin: 0;
+        padding: 0;
+        display: flex; 
+        justify-content: center; 
+    }
+}
+
+header nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #000000;
+}
+
+section p {
+    margin: 20px 40px;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none; 
+    transition: background-color 0.3s; 
+}
+
+header nav li a:hover {
+    background-color: #00A8E1;
+}
+
+.Imagenes_Aplicaciones {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.Imagenes_Aplicaciones img {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+section {
+    h2 {
+        color: rgb(0, 168, 225); 
+        letter-spacing: 1.5px; 
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    img {
+        width: 200px; 
+        height: 200px;
+        display: block;
+        margin: 5px 5px 5px; 
+        p{color: white;}
+    }
+    .artista {
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+    }
+}
+
+.artista {
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.artista img {
+    width: 150px;
+    margin-right: 25px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+.info {
+    margin-left: 20px;
+    max-width: 360px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    padding: 18px;
+    display: none;
+    line-height: 1.5;
+    border-radius: 6px;
+}
+
+.artista:hover .info {
+    display: block;
+}
+
+section img,
+.Imagenes_Aplicaciones img,
+.artista img {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+section img:hover, 
+.Imagenes_Aplicaciones img:hover, 
+.artista img:hover {
+    box-shadow: #FF5500 0px 0px 30px;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.artista img {
+    width: 150px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+h3 {
+    color: rgb(0, 168, 225); 
+    letter-spacing: 1.5px; 
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+section h3 {
+    text-align: center;
+    color: #00A8E1;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px; 
+}
+
+footer {
+    background-color: #222;
+    color: #ffffff; 
+    padding: 20px 0;
+    margin-top: auto; 
+    text-align: center;
+    border-top: 2px solid #00A8E1;
+}
+
+.contenido-footer {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 7px; 
+    flex-wrap: wrap;
+}
+
+.contenido-footer img {
+    cursor: pointer;
+    transition: transform 0.2s; 
+    width: 25px; 
+    height: 25px;
+}
+
+.contenido-footer img:hover {
+    transform: scale(1.2);
+    color: #00A8E1;
+}
+
+.seccion-artistas {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: nowrap;       
+    gap: 20px;               
+    padding-bottom: 50px;
+}
+
+.ArtistaFavorito {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #FF5500;
+    flex-shrink: 0;          
+}
+
+.ArtistaFavorito img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.ArtistaFavorito nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    border-radius: 50%;
+}
+
+.ArtistaFavorito nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+.ArtistaFavorito nav ul strong {
+    display: block;
+    color: #00A8E1;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.ArtistaFavorito nav ul li {
+    font-size: 0.75rem;
+    margin-bottom: 2px;
+}
+
+.ArtistaFavorito:hover img {
+    transform: scale(1.1);
+    filter: blur(2px) brightness(0.5);
+}
+
+.ArtistaFavorito:hover {
+    box-shadow: 0 0 30px #FF5500;
+}
+
+.ArtistaFavorito:hover nav {
+    opacity: 1;
+}
+
+.seccion-tabla {
+    padding: 40px 20px;
+    margin-bottom: 80px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+table {
+    margin: 0 auto; 
+    width: 85%;
+    border-collapse: collapse;
+    background-color: #111;
+    color: white;
+    border: 2px solid #1DB954;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th {
+    background-color: #1DB954;
+    color: black;
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #222;
+}
+
+tr:hover {
+    background-color: #1a1a1a;
+    color: #FF5500;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+@media (max-width: 768px) {
+    body { padding-top: 120px; }
+    main { padding: 30px 8%; }
+    .Imagenes_Aplicaciones, .artista { flex-direction: column; text-align: center; }
+    h1 { font-size: 1.8rem; }
+    header nav li a { padding: 10px 12px; font-size: 0.75rem; }
+    table { width: 100%; font-size: 0.8rem; }
+    .ArtistaFavorito { width: 140px; height: 140px; }
+}
+
+:root{
+  --h1-height: 65px;
+  --nav-height: 52px; 
+}
+
+header h1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 12px 0;
+  background: #000;
+  z-index: 1002;
+  text-align: center;
+}
+
+header nav {
+  position: fixed;
+  top: calc(var(--h1-height));
+  left: 0;
+  right: 0;
+  z-index: 1001;
+  background-color: #000;
+}
+
+main {
+  margin-top: 0px;
+}
+
+header video {
+  display: block;
+  margin-top: calc(var(--h1-height) + var(--nav-height));
+  width: 100%;
+  height: auto;
+  width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: cover; 
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    display: block;
+}
+  video{
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+main > p + p {
+  margin: 8px 12px;
+}
+
+html {
+  scroll-behavior: smooth;
+}

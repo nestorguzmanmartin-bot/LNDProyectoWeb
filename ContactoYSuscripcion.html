@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Suscripción - Ritmo y Bit</title>
+    <link rel="stylesheet" href="CCS/CCSContacto.css">
+</head>
+<body>
+    <header>
+        <h1>Ritmo y Bit</h1>
+        <nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Historia.html">Historia de la música</a></li>
+        <li><a href="ContactoYSuscripcion.html">Contacto y Suscripción</a></li>
+    </ul>
+</nav>
+    </header>
+
+    <main class="contenedor-principal">
+        <section class="contenedor-formulario">
+            <h2>Únete a la Comunidad</h2>
+            <p class="texto-oferta">Suscríbase y gane un 5% de descuento en su próxima suscripción a su aplicación de música preferida.</p>
+            
+            <form action="#" method="POST">
+                <div class="grupo-input">
+                    <label for="nombre">Nombre y Apellidos</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="grupo-input">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="grupo-input">
+                    <label for="musica">Tipo de música preferida</label>
+                    <select id="musica" name="musica" required>
+                        <option value="" disabled selected>Selecciona un género...</option>
+                        <option value="pop">Pop</option>
+                        <option value="rock">Rock / Metal</option>
+                        <option value="urbano">Reggaetón / Urbano</option>
+                        <option value="electronica">Electrónica</option>
+                        <option value="jazz">Jazz / Blues</option>
+                        <option value="clasica">Clásica</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-suscribir">Suscribirse Ahora</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenido-footer">
+            <p>&copy; 2026 Ritmo y Bit. Tu dosis diaria de música. Conéctate a nuestras redes para no perderte nada.</p>
+            <img src="Imganes y video/Instagram.svg" alt="Instagram" width="25">
+            <img src="Imganes y video/TikTok" alt="TikTok" width="25">
+            <img src="Imganes y video/X.png" alt="X" width="25">
+        </div>
+    </footer>
+    <script>
+    const miFormulario = document.querySelector('form');
+
+    miFormulario.addEventListener('submit', function(event) {
+        event.preventDefault(); 
+        
+        const nombre = document.getElementById('nombre').value;
+
+        alert("¡Gracias por unirte " + nombre + "! Revisa tu correo, te hemos enviado tu descuento del 5%.");
+        
+        miFormulario.reset();
+    });
+</script>
+</body>
+</html>
