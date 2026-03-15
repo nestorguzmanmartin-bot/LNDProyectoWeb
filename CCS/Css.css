@@ -1,16 +1,17 @@
 body {
-    font-family: Arial, sans-serif; 
+    font-family: 'Roboto', sans-serif; 
     margin: 0;
     padding: 0;
     background-color: #000000; 
     color: #333; 
     display: flex;
     flex-direction: column;
-    min-height: 100vh; 
+    min-height: 100vh;
 }
 
-body p {
+p {
     color: rgb(236, 236, 236);
+    line-height: 1.6;
 }
 
 h1 {
@@ -197,12 +198,21 @@ header video {
     margin-top: 110px;
 }
 
-@media (max-width: 700px) {
-    .Imagenes_Aplicaciones, .artista, .seccion-artistas { 
-        flex-direction: column; 
-        align-items: center;
-    }
-    .tabla-cantantes { 
-        width: 100%; 
-    }
+@media (max-width: 480px) {
+    h1 { font-size: 1.5rem; }
+    header nav ul { flex-direction: column; align-items: center; }
+    .seccion-artistas { flex-direction: column; align-items: center; }
+    .tabla-cantantes { font-size: 0.7rem; }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    h1 { font-size: 1.8rem; }
+    .seccion-artistas { flex-wrap: wrap; }
+    .tabla-cantantes { width: 95%; }
+}
+
+@media (min-width: 1200px) {
+    main { padding: 40px 15%; }
+    .seccion-artistas { gap: 50px; }
+    .tabla-cantantes { width: 80%; }
 }

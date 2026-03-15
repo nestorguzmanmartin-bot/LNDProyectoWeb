@@ -1,12 +1,17 @@
 body {
-    background-color: #0b0b0b;
-    color: #eee;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif; 
     margin: 0;
     padding: 0;
+    background-color: #000000; 
+    color: #333; 
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+p {
+    color: rgb(236, 236, 236);
+    line-height: 1.6;
 }
 
 header h1 {
@@ -136,4 +141,17 @@ footer {
 
 html {
   scroll-behavior: smooth;
+}
+
+@media (max-width: 480px) {
+    .contenedor-formulario { padding: 20px; width: 90%; }
+    header h1 { font-size: 1.4rem; }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .contenedor-formulario { width: 70%; }
+}
+
+@media (min-width: 1200px) {
+    .contenedor-formulario { width: 40%; max-width: 600px; }
 }
