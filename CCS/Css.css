@@ -61,7 +61,8 @@ header video {
     max-height: 250px;
     object-fit: cover;
     display: block;
-    margin-top: 115px;
+    /* Ajustado para que el header esté pegado al video */
+    margin-top: 115px; 
 }
 
 section p {
@@ -210,6 +211,15 @@ tr:hover td {
     color: #FF5500;
 }
 
+/* --- MEDIAS QUERIES --- */
+
+/* TABLET (Pantallas medianas) */
+@media (min-width: 701px) and (max-width: 1024px) {
+    .tabla-cantantes { width: 90%; }
+    .seccion-artistas { gap: 15px; }
+}
+
+/* MÓVIL (Pantallas pequeñas) */
 @media (max-width: 700px) {
     .Imagenes_Aplicaciones, .artista, .seccion-artistas { 
         flex-direction: column; 
@@ -221,5 +231,8 @@ tr:hover td {
     }
     .tabla-cantantes { 
         width: 100%; 
+        font-size: 0.8rem;
     }
+    header h1 { font-size: 1.6rem; }
+    nav li a { padding: 10px 12px; font-size: 0.9rem; }
 }
