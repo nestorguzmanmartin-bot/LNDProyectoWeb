@@ -211,6 +211,19 @@ tr:hover td {
     color: #FF5500;
 }
 
+/* Definimos la animación con @keyframes*/
+@keyframes brilloLogo {
+    0% { color: #1DB954; text-shadow: 0 0 5px rgba(29, 185, 84, 0.2); }
+    50% { color: #00A8E1; text-shadow: 0 0 20px rgba(0, 168, 225, 0.6); }
+    100% { color: #1DB954; text-shadow: 0 0 5px rgba(29, 185, 84, 0.2); }
+}
+
+/* Aplicamos la animación usando un selector de ID*/
+#titulo-animado {
+    animation: brilloLogo 3s infinite ease-in-out;
+    display: inline-block; /* Para que la animación se aplique correctamente */
+}
+
 /* --- MEDIAS QUERIES --- */
 
 /* TABLET (Pantallas medianas) */
