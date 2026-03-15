@@ -42,11 +42,20 @@ header nav li a:hover {
 
 .contenedor-layout {
     display: flex;
-    max-width: 1400px;
-    margin: 50px auto;
-    gap: 40px;
+    max-width: 1600px; 
+    margin: 20px auto; 
+    gap: 30px;
     padding: 0 20px;
     align-items: flex-start;
+}
+
+.contenido-historia {
+    flex: 2; 
+    padding: 40px;
+    background-color: #000;
+    border: 2px solid #00A8E1;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 168, 225, 0.3);
 }
 
 .galeria-fotos {
