@@ -139,10 +139,6 @@ footer {
     gap: 15px;
 }
 
-.contenedor-principal {
-    margin-top: 120px; 
-}
-
 html {
   scroll-behavior: smooth;
 }
